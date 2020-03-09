@@ -19,6 +19,6 @@ from django.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('MemeGenerator/', include('MemeGenerator.urls')),
+    path('ImageSearcher/', include('ImageSearcher.urls')),
     path('TextInserter/', include('TextInserter.urls')),
 ]

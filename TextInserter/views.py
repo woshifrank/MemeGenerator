@@ -1,5 +1,5 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
-# Create your views here.
+# Class-based view
 class HelloWorld(TemplateView):
     template_name = 'test.html'
