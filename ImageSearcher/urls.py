@@ -1,0 +1,1 @@
+# url configuration for app ImageSearchewr
