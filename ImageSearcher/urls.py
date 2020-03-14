@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 #from django.urls import include
-from ImageSearcher.views import HelloWorld,PhotosView
+from ImageSearcher.views import HelloWorld,PhotosView,index,search
 
 urlpatterns = [
-    path('', HelloWorld.as_view(), name = 'helloworld'),
-    path('photos/', PhotosView.as_view(),name = 'photos')
+    #path('', HelloWorld.as_view(), name = 'helloworld'),
+    path('', index, name = 'searchPage'),
+    path('searchResult/', search, name = 'searchResult'),
+    #path('photos/', PhotosView.as_view(),name = 'photos')
 ]

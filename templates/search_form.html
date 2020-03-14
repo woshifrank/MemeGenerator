@@ -1,0 +1,6 @@
+<form method="POST" action="/ImageSearcher/searchResult/">
+    {% csrf_token %}
+    <p>MemeGenerator for Flickr</p>
+    <input type="text" name="keyword">
+    <button type="submit">Search Photos in Flickr</button>
+</form>
