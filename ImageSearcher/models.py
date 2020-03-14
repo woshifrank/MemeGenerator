@@ -6,7 +6,7 @@ class Photo(models.Model):
     title = models.TextField(blank=True,null=True)
     text = models.TextField(blank=True,null=True)
     image = ProcessedImageField(
-        upload_to = 'static/images/posts',
+        upload_to = 'static/images/photos',
         format = 'JPEG',
         options = {'quality' : 100},
         blank = True,

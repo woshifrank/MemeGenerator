@@ -20,5 +20,5 @@ from django.urls import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ImageSearcher/', include('ImageSearcher.urls')),
-    path('TextInserter/', include('TextInserter.urls')),
+    #path('TextInserter/', include('TextInserter.urls')),
 ]
