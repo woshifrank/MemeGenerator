@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'MemeMaker',
     'TextInserter',
     'imagekit',
-    'flickrapi'
+    'flickrapi',
 ]
 
 MIDDLEWARE = [

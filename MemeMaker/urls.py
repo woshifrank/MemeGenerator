@@ -24,6 +24,6 @@ urlpatterns = [
     path('', index, name = 'searchPage'),
     path('searchResult/', search, name = 'searchResult'),
     path('makeMeme/<path:photo_url>', memeChoice, name = 'meme_generation_page'),
-    path('showMeme/<path:photo_url>', memeShow, name = 'meme_demonstration')
+    path('showMeme/<path:selected_photo_url>', memeShow, name = 'meme_demonstration')
     #path('photos/', PhotosView.as_view(),name = 'photos')
 ]
