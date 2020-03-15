@@ -4,6 +4,7 @@ from django.shortcuts import render
 from django.views.generic import TemplateView, ListView
 from ImageSearcher.models import Photo
 from django.views.generic.edit import FormView
+from django.http import HttpResponse
 
 # import flickrapi
 import flickrapi
@@ -27,7 +28,16 @@ def search(request):
                 return render(request,'no_responce.html')
             else:
                 # render the photos on a new-webpage, allowing the user to select one of them.
-                return render(request,'no_responce.html')
+                urls = []
+                for photo in photos:
+                    # http://farm{farm-id}.static.flickr.com/{server-id}/{id}_{secret}.jpg 
+                    url = "http://farm{}.static.flickr.com/{}/{}_{}.jpg"\
+                        .format(photo["farm"], photo["server"], photo["id"], photo["secret"])
+                    urls.append(url)
+                #html = '<div>%s</div>'%str(urls)
+                #return HttpResponse(html)
+                context = {"urls":urls}
+                return render(request,'search_result.html',context)
 
         except flickrapi.exceptions.FlickrError as err:
             # when searchAPI is not available
