@@ -17,11 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 #from django.urls import include
-from ImageSearcher.views import HelloWorld,PhotosView,index,search
+from MemeMaker.views import HelloWorld,PhotosView,index,search, memeChoice, memeShow
 
 urlpatterns = [
     #path('', HelloWorld.as_view(), name = 'helloworld'),
     path('', index, name = 'searchPage'),
     path('searchResult/', search, name = 'searchResult'),
+    path('makeMeme/<path:photo_url>', memeChoice, name = 'meme_generation_page'),
+    path('showMeme/<path:photo_url>', memeShow, name = 'meme_demonstration')
     #path('photos/', PhotosView.as_view(),name = 'photos')
 ]

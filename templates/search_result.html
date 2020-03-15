@@ -1,6 +1,8 @@
 <h>Please select the image you want as the base of the meme</h>
 <div>
     {% for photo_url in urls %}
-        <div><img src = {{photo_url}}></div>
+        <a href = "{% url 'meme_generation_page' photo_url %}">
+            <img src = {{photo_url}}>
+        </a>
     {% endfor %}
 </div>
