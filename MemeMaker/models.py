@@ -1,11 +1,11 @@
 from django.db import models
 from imagekit.models import ProcessedImageField
 
-# Create your models here.
-
 
 class Photo(models.Model):
-    #title = models.TextField(blank=True,null=True)
+    """This model is created for future development.
+    It will enable user to store their search results or memes in database.
+    """
     url = models.TextField(blank=True, null=True)
     inserted_text = models.TextField(blank=True, null=True)
     image = ProcessedImageField(

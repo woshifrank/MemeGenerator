@@ -1,7 +1,10 @@
+<!-- This page demonstrates the meme result-->
 <h1>Hurrah! A Meme is generated!</h1>
+<!-- It fetches the meme stored in static folder.-->
 {% load static %}
 <img src="{% static 'Meme.jpeg' %}">
 
+<!-- Provides the jump link if the user wants to generate another meme.-->
 <div>
     <P></P>
     <a href="{% url 'searchPage' %}">Generate the next Meme</a>

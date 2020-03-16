@@ -1,6 +1,8 @@
-<h>Please select the image you want as the base of the meme</h>
+<h><b>Please click the image you prefer as the base of the meme</b></h>
 <div>
+    <!-- Demonstrate each of the flickr search result. -->
     {% for photo_url in urls %}
+        <!-- By clicking the photo, the users select the photo as their meme base. -->
         <a href = "{% url 'meme_generation_page' photo_url %}">
             <img src = {{photo_url}}>
         </a>

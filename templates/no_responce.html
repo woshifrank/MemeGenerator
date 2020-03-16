@@ -1,5 +1,7 @@
+<!-- If flickr search can't find matching result(matching num = 0), the app renders this page. -->
 <h1>OOPS! Looks like Flickr has no responce matching</h1>
 <div>
+    <!-- Prompt the user to try a different search keyword -->
     <p>Maybe try a different keyword?</p>
     <a href="{% url 'searchPage' %}">Jump back to the search page</a>
 </div>

@@ -1,4 +1,4 @@
-# url configuration for app ImageSearcher
+# Url configuration for app MemeMaker.
 """MemeGenerator URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -16,8 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-#from django.urls import include
-from MemeMaker.views import HelloWorld, PhotosView, index, search, memeChoice, memeShow
+from MemeMaker.views import PhotosView, index, search, memeChoice, memeShow
 
 urlpatterns = [
     path('', index, name='searchPage'),

@@ -1,6 +1,8 @@
+<!-- This page prompts the user to enter the text to insert into the photo.-->
 <h1>MemeGenerator</h1>
 <form method="POST" action="/MemeMaker/showMeme/{{selected_photo_url}}">
     {% csrf_token %}
+    <!-- Show the photo selected by the user.-->
     <img src={{selected_photo_url}}>
     <p>Please input the text your want to insert</p>
     <input type="text" name="memeText">
