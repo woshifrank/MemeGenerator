@@ -11,7 +11,7 @@ Quick start
 -----------
 1. Extract MemeGenerator.zip to a directory.
 
-2. Open the directory in terminal. Make sure pipenv and python3.8is installed
+2. Open the directory in terminal. Make sure pipenv and python3.8 are installed
 
 3. Run 'pipenv install' command in the directory. After pipenv is set up,
 activate the environment with 'pipenv shell'
