@@ -26,3 +26,6 @@ activate the environment with 'pipenv shell'
 username:yijiefrank, password: woshifrank.
 However, since I did not adopt class-view during my development, the 'Photos' in MEMEMAKER section is still unapplicable.
 
+8. Current font adopts is Arial. The Arial.ttf file in the static folder are added as the current font source for texts in meme. This solves the conflicts during which MacOS and Windows use different
+naming conventions for their font files. For Future development font selection can be added for users.  
+
