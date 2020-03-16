@@ -5,7 +5,7 @@ MemeMaker is a Django app that I create for Academic Innovation Software Develop
 It will enable users to search for images on Flickr with a given string, and select the one they 
 prefer and create a meme based on it. 
 
-Detailed documentation is in the "docs" directory.
+MemeGenerator is the name of my django project, and MemeMaker is the actual application for it. 
 
 Quick start
 -----------
