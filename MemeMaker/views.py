@@ -119,7 +119,8 @@ def memeShow(request, selected_photo_url):
     # Use the default font and color is white.
     # For Future development, fetch font info and color from user's input.
     #font = ImageFont.load_default()
-    font = ImageFont.truetype('arial', size=45)
+    font_path = os.path.join(STATICFILES_DIRS[0], 'Arial.ttf')
+    font = ImageFont.truetype(font_path, size=45)
     color = 'rgb(255, 255, 255)'
 
     photo_width, photo_height = image.size
