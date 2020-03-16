@@ -13,7 +13,6 @@ django-imagekit = "*"
 pillow = "*"
 flickrapi = "*"
 setuptools = "*"
-fonts = "*"
 
 [requires]
 python_version = "3.8"
