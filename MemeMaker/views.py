@@ -15,7 +15,6 @@ import requests
 import os
 from io import BytesIO
 
-
 def index(request):
     """The search page for the app.
     It prompts user to enter the keyword for Flickr searching
@@ -117,9 +116,10 @@ def memeShow(request, selected_photo_url):
     image = Image.open(BytesIO(web_response.content))
 
     draw = ImageDraw.Draw(image)
-    # Default font is arial with size 45 and color is white.
+    # Use the default font and color is white.
     # For Future development, fetch font info and color from user's input.
-    font = ImageFont.truetype("arial.ttf", size=45)
+    #font = ImageFont.load_default()
+    font = ImageFont.truetype('arial', size=45)
     color = 'rgb(255, 255, 255)'
 
     photo_width, photo_height = image.size
